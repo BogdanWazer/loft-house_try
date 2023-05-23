@@ -3,6 +3,11 @@
 @import './base/vars';
 @import './base/base';
 
+//Blocks
+
+@import './blocks/header';
+@import './blocks/nav';
+
 body {
   font-family: $font-main;
   background-color: $dark;
