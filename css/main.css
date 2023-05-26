@@ -123,6 +123,10 @@ a:hover {
   width: 1140px;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -155,10 +159,39 @@ a:hover {
   left: 50%;
 }
 
+.header__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
 .nav__list {
   font-size: 14px;
   display: flex;
   gap: 40px;
+}
+
+.info {
+  font-size: 18px;
+  position: relative;
+}
+.info--map, .info--tel {
+  padding-left: 35px;
+}
+.info--map::before, .info--tel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+.info--map::before {
+  background-image: url("./../../img/map.svg");
+}
+.info--tel::before {
+  background-image: url("./../../img/phone.svg");
 }
 
 body {

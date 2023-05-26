@@ -37,3 +37,10 @@
     left: 50%;
   }
 }
+
+.header__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
