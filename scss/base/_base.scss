@@ -17,8 +17,37 @@ a {
   margin: 0 auto;
   padding: 0 15px;
   width: 1140px;
+
+  &--small {
+    max-width: 900px;
+  }
 }
 
 .text-right {
   text-align: right;
+}
+
+.visually-hidden {
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+
+  position: absolute;
+
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(50%);
+
+  white-space: nowrap;
+}
+
+.none {
+  display: none !important;
+}
+
+.title-2 {
+  font-family: $font-accent;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: $accent;
 }
